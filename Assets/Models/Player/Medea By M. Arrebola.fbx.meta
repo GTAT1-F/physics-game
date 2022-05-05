@@ -1,12 +1,32 @@
 fileFormatVersion: 2
-guid: 90bee417def81804c86ef28ad56eb8b1
+guid: a0f933f4319c0314390390b48bf84f0d
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MEDEA diffuse
+    second: {fileID: 2800000, guid: 4e51f5c386b9fef45932a0b58d4fbb22, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MEDEA glow
+    second: {fileID: 2800000, guid: 222bc2b131b4fea47b89c7d6e73ed836, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MEDEA specular
+    second: {fileID: 2800000, guid: 62dfe1ae74adb554b89ac9fdb884d4ed, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: body diffuse
+    second: {fileID: 2800000, guid: 8fb76bbeb3502574c9a5927eca9eb8a0, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -26,7 +46,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -91,13 +111,13 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 1
+    hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 

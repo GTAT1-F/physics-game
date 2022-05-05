@@ -4,27 +4,36 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private CharacterController controller;
+    [SerializeField] private CharacterController controller;
     private Vector3 playerVelocity;
+    
     private bool groundedPlayer;
-    private float playerSpeed = 2.0f;
+    private float playerSpeed = 5.0f;
+
+    public Animator animator;
+    public Transform transform;
+
     
     // Start is called before the first frame update
     void Start()
     {
-        controller = gameObject.AddComponent<CharacterController>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
       Vector3 move = new Vector3(Input.GetAxis("Horizontal"),0, 0);
+      
       controller.Move(move * Time.deltaTime * playerSpeed);
-      if (Input.GetKeyDown(KeyCode.D))
+
+      if(Input.GetAxis("Horizontal") != 0)
       {
-          gameObject.transform.forward = move;
+            Quaternion rotation = Quaternion.LookRotation(move);
+            transform.rotation = rotation;
       }
 
+      animator.SetFloat("speed", Mathf.Abs(move.x));
 
     }
 }
